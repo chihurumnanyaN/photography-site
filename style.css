@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+      font-family: "Geist Mono", serif;
+    background-color: #0e0e0e;
+}
+
+.heading{
+    font-family: "Geist Mono", serif;
+      font-weight: 500;
+  font-size: 3rem;
+  font-style:normal;
+  color:#eeaf02;
+  margin-top:10vh;
+  text-align: center;
+}
+.landing-page{
+    background: url(assets/bg.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size:cover;
+    background-position:100%;
+}
+.landing-page nav{
+    height: 10vh;
+    background-color: rgba(250, 185, 5, 0.199);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:1;
+    z-index:2;
+  
+}
+
+.landing-page nav .logo{
+    margin: 0 2rem;
+}
+.landing-page nav .logo h1{
+      font-family: "Anton SC", serif;
+  font-weight: 700;
+  font-size: 3rem;
+  
+  font-style:normal;
+  color: #0e0e0e;
+}
+.landing-page nav .logo h1 span{
+ text-decoration:underline;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap:1rem;
+    width:auto;
+    margin-right: 20vw;
+}
+
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    font-size:1rem;
+    text-decoration: none;
+     color: #0e0e0e;
+}
+
+nav ul li a span{
+     transition: transform 0.3s ease;
+}
+nav ul li a:hover{
+    font-size:1.2rem;
+}
+nav ul li a span:hover{
+    transform: scale(0.5);
+    border-bottom: #0e0e0e solid 2px;
+    padding-bottom:1rem;
+}
+.landing-page .text{
+    width: 40vw;
+    margin:20vh 50% auto auto;
+    padding:0 0 0 2rem ;
+    border-left: #0e0e0e solid 2px;
+    
+}
+.landing-page .text h1{
+  font-family: "Anton SC", serif;
+  font-weight: 700;
+  font-size: 4rem;
+  font-style:oblique;
+  color: #0e0e0e;
+}
+
+.about-page .page-content{
+    display: flex;
+    gap: 20%;
+    margin:10vw;
+}
+.about-page img{
+    width:30vw;
+    height: auto;
+    padding:0 2rem 2rem 0;
+    border-right: #eeaf02 solid 2px;
+    border-bottom: #eeaf02 solid 2px;
+}
+
+.about-page ,text p{
+    font-size:1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.our-services .services{
+        display: flex;
+    gap: 20%;
+    margin:10vw;
+}
+
+.our-services .services li,h3{
+        font-size:1.5rem;
+    color: white;
+    text-align:left;
+}
+
+.our-services ul img{
+    transform: rotate(90deg);
+    margin-top:7px;
+        width:30vw;
+    height: auto;
+}
+.our-services .services .services-img{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.our-services .services .services-img img{
+    width:20vw;
+    height: auto;
+}
