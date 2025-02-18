@@ -18,7 +18,7 @@ body{
 .landing-page{
     background: url(assets/bg.jpg);
     height: 100vh;
-    width: 100vw;
+    width:100%;
     background-size:cover;
     background-position:100%;
     margin: 0;
@@ -123,43 +123,6 @@ nav ul li a span:hover{
   font-style:oblique;
   color: #0e0e0e;
 }
-
-/* The typing effect container */
-.landing-page .text{
-  display: inline-block;
-}
-
-/* Styling for each line of text */
-.line {
-  display: inline-block;
-  overflow: hidden; /* Hides the text that hasn't appeared yet */
-  white-space: nowrap;
-  animation: typing 4s steps(10) 1s forwards; 
-}
-
-/* The typing animation */
-@keyframes typing {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-/* Delay the animation for each line */
-.line:nth-child(1) {
-  animation: typing 3s steps(10) 3s forwards; /* First line appears immediately */
-}
-
-.line:nth-child(2) {
-  animation: typing 6s steps(10) 3s forwards; /* Second line appears after the first line finishes */
-}
-
-.line:nth-child(3) {
-  animation: typing 9s steps(10) 3s forwards; /* Third line appears after the second line finishes */
-}
-
 
 
 
