@@ -94,6 +94,10 @@ nav ul li a{
     color:white;
 }
 
+nav i{
+    display: none;
+}
+
 nav ul li a span{
      transition: transform 0.3s ease;
 }
@@ -215,4 +219,91 @@ nav ul li a span:hover{
 .footer .contact a i:hover{
     color: #0e0e0e;
     font-size: 1rem;
+}
+
+
+
+
+
+
+/* rresponsive */
+
+@media (max-width: 767px) {
+
+    .heading{
+    font-family: "Geist Mono", serif;
+      font-weight: 500;
+  font-size: 1.2rem;
+  font-style:normal;
+  color:#eeaf02;
+  margin-top:10vh;
+  text-align: center;
+}
+   nav {
+       position: fixed;
+       top: 0;
+    }
+    nav i{
+        display:block;
+        font-size:40px;
+        color: #0e0e0e;
+        margin:0 30px;
+    }
+
+        nav i:hover{
+        display:block;
+        font-size:40px;
+        background-color: #eeaf02bd;
+        margin:0 30px;
+        padding: 5px;
+        border-radius:5px;
+    }
+    nav ul{
+        display: none;
+    }
+
+     nav .logo{
+    margin: 0 2rem;
+    display: flex;
+    gap:0;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeaf028c;
+    height:10vh;
+    padding: 0 30px;
+}
+ nav .logo img{
+  width:3rem;
+
+}
+.landing-page nav .logo p{
+ color: #0e0e0e;
+}
+    .landing-page{
+    background: url(assets/bg-mobile.jpg);
+    height: 110vh;
+    width:100%;
+    background-size:cover;
+    background-position:center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.landing-page .text{
+    width: 40vw;
+    height: 50vh;
+    margin:20vh 30% auto 5%;
+    padding:0 0 0 1rem ;
+    border-left: #0e0e0e solid 1px;
+    
+}
+
+.landing-page .text h1{
+  font-family: "Anton SC", serif;
+  font-weight: 700;
+  font-size: 2rem;
+  font-style:oblique;
+  color: #0e0e0e;
+}
 }
